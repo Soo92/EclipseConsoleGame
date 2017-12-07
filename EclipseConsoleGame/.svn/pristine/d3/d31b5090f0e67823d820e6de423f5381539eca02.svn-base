@@ -1,0 +1,46 @@
+package enemy;
+
+import Interface.Action;
+import Interface.Status;
+import Interface.Weapon;
+dsaf
+public abstract class enemy {
+
+	Action enemyaction;
+	Weapon enemyweapon;
+
+	int Hp;
+	int demage;	
+	int x_position=0;
+	
+	public Action getEnemyaction() {
+		return enemyaction;
+	}
+	public void setEnemyaction(Action enemyaction) {
+		this.enemyaction = enemyaction;
+	}
+	public Weapon getEnemyweapon() {
+		return enemyweapon;
+	}
+	public void setEnemyweapon(Weapon enemyweapon) {
+		this.enemyweapon = enemyweapon;
+	}
+	public int getHp() {
+		return Hp;
+	}
+	public void setHp(int hp) {
+		this.Hp = hp;
+	}
+	public int getDemage() {
+		return demage;
+	}
+	public void setDemage(int demage) {
+		this.demage = demage;
+	}
+	public int getX_position() {
+		return x_position;
+	}
+	public void setX_position(int x_position) {
+		this.x_position = x_position;
+	}
+}

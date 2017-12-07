@@ -1,0 +1,6 @@
+package enemy;
+public abstract class enemy3 extends enemy {
+	public void guard() {
+System.out.println("방어를 시작합니다.");
+}
+}

@@ -1,0 +1,8 @@
+package character;
+
+import choice.Character;
+
+public class EsangHeaSea extends Character {
+	public int Hp=13;
+	public int demage=10;
+}

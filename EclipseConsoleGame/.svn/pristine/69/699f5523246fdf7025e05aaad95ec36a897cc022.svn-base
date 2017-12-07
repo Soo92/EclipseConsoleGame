@@ -1,0 +1,6 @@
+package enemy;
+public abstract class enemy4 extends enemy {
+	public void escape() {
+System.out.println("도망가기 시작합니다.");
+}
+}

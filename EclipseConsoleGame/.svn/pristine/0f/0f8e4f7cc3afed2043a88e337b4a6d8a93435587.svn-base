@@ -1,0 +1,8 @@
+package character;
+
+import choice.Character;
+
+public class Fairi extends Character{
+	public int Hp=11;
+	public int demage=10;
+}

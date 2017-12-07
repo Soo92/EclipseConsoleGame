@@ -1,0 +1,6 @@
+package character;
+
+public class Ggobuggi extends Character {
+	public int Hp=12;
+	public int demage=10;
+}

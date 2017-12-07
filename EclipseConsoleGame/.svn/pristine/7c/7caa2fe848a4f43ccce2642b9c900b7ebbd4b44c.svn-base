@@ -1,0 +1,36 @@
+package character;
+
+import Interface.Action;
+import Interface.Status;
+import Interface.Weapon;
+dsadsa
+public abstract class Character {
+	Action chraction;
+	Status chrstatus;
+	Weapon chrweapon;
+
+	public int Hp;
+	public int demage;	
+	public int x_position=0;
+	
+	public int getHp() {
+		return this.Hp;
+	}
+	public void setHp(int hp) {
+		this.Hp = hp;
+	}
+	
+	public int getDemage() {
+		return demage;
+	}
+	public void setDemage(int demage) {
+		this.demage = demage;
+	}
+	
+	public int getX_position() {
+		return x_position;
+	}
+	public void setX_position(int x_position) {
+		this.x_position = x_position;
+	}
+}

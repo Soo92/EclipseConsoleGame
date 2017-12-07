@@ -1,0 +1,72 @@
+package main;
+
+import java.util.Scanner;
+
+import character.Pikachu;
+
+public class MainFrame {
+   
+   public static void main(String[] args) {
+	  System.out.println();
+      Scanner scanner = new Scanner(System.in);
+      String mainCharacter[] = {"피카츄", "파이리", "꼬부기", "이상해씨"};
+      String Partner = null;
+
+      System.out.println("HP");
+
+      System.out.println("파트너 포켓몬을 선택해주세요.");
+      for (int i = 0; i < mainCharacter.length; i++) {
+    	  System.out.print((i+1)+". "+mainCharacter[i]+"  ");  ///
+      }
+      System.out.println("\n");
+      boolean select = true;
+      
+      while(select) {
+         String chSelect = scanner.next();
+         for (int i = 0; i < mainCharacter.length; i++) {
+            if(chSelect.equals(mainCharacter[i])||chSelect.equals(i+1+"")) {
+               System.out.println("포켓몬 '" + mainCharacter[i] + "' 와 파트너가 되었습니다.");
+               Partner = mainCharacter[i];
+               select = false;
+            }
+         } if(select) System.out.println("다시입력하시오");
+      }// ------- while
+      
+      int x = 0;
+      boolean a = (x<101);
+      
+      while(a) {
+         try {
+            x++;
+            System.out.println(x);
+            Thread.sleep(900);
+            if(x==10) {
+               a = false;
+               System.out.println("적과 마주하셨습니다. 싸우시겠습니까? \n 1. 싸운다  2.지나친다");
+               String meet = scanner.next();
+                  if(meet.equals("싸운다")) {
+                     System.out.println("결투를 시작하겠습니다");
+                     System.out.println("1. 공격   2. 방어  3. 도망");  ///
+                     String fight = scanner.next();
+                        //결투 시작할때 경우의 수
+                        if(fight.equals("공격"))
+                           System.out.println(Partner+"가 공격했습니다.");
+                        if(fight.equals("방어"))
+                           System.out.println(Partner+"가 방어했습니다.");
+                        if(fight.equals("도망"))
+                           System.out.println(Partner+"와 함께 도망가기에 성공했습니다!");
+                  }else if(meet.equals("지나간다")) {
+                     System.out.println("적을 지나쳤습니다.");
+                  }
+               a = true;
+            }// x==10
+            if(x==30) {
+               System.err.println("GameOver_HappyEnding");
+               a = false;
+            }
+         } catch (InterruptedException e) {
+            e.printStackTrace();
+         }
+      }//--- while
+   }
+}

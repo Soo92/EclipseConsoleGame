@@ -1,0 +1,8 @@
+package enemy;
+public abstract class enemy2 extends enemy {
+	public void attack() {
+		System.out.println("공격을 시작합니다.");
+		
+}
+	
+}

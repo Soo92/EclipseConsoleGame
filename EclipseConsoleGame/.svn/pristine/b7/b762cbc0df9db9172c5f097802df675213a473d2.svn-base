@@ -1,0 +1,6 @@
+package enemy;
+
+public class enemy1 extends enemy {
+	public int Hp=10;
+	public int demage=10;
+}

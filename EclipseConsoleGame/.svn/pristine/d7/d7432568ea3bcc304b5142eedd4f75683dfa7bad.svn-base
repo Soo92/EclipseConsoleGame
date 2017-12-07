@@ -1,0 +1,6 @@
+package character;
+
+public class Pikachu extends Character{
+	int Hp=10;
+	int demage=10;
+}
